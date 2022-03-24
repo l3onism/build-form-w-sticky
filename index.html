@@ -4,9 +4,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Project Form</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <header>
+        <div class="inner-container">
+            <h1 class="sr-only">Company Name</h1>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75.14 72.676">
+                <path d="M51.85 29.084c8.017 0 14.522-6.514 14.522-14.536C66.372 6.524 59.866 0 51.85 0c-8.03 0-14.573 6.524-14.573 14.548 0 8.022 6.543 14.536 14.573 14.536M0 3.256h24.701v69.42H0zM57.695 37.136L35.367 50.087l11.5 22.589h28.272z"></path>
+            </svg>
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Search</a></li>
+                    <li><a href="#">Branding</a></li>
+                    <li><a href="#">Website</a></li>
+                    <li><a href="#">Packaging</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <h2>Project Form</h2>
+
+        <p>Fill in the fields below and describe your needs.</p>
+
+        <p>In return we will contact you and suggest solutions for your business needs.</p>
+
+        <form action="#" method="post" name="project-form">
+            <fieldset class="row">
+                <div class="col">
+                    <label for="name">Name/Surname</label>
+                    <input type="text" name="name" placeholder="e.g. Jane Doe">
+                </div>
+
+                <div class="col">
+                    <label for="company">Company</label>
+                    <input type="text" name="company" placeholder="To get to you knows">
+                </div>
+
+                <div class="col">
+                    <label for="tel">Tel.</label>
+                    <input type="tel" name="tel" placeholder="To get in touch with you">
+                </div>
+
+                <div class="col">
+                    <label for="city">City</label>
+                    <input type="text" name="city" placeholder="For your region's code">
+                </div>
+
+                <div class="col">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="For our written communication">
+                </div>
+
+                <div class="col">
+                    <label for="website">Website</label>
+                    <input type="text" name="website" placeholder="www.website">
+                </div>
+            </fieldset>
+
+            <fieldset >
+                <h3>Specifics</h3>
+                <div class="row">
+                    <div class="col">
+                        <label for="deadline">Deadline</label>
+                        <input type="date" name="deadline">
+                    </div>
     
+                    <div class="col">
+                        <label for="budget">Budget</label>
+                        <input type="number" name="budget" placeholder="$5000 - $10,000">
+                    </div>
+    
+                    <div class="col">
+                        <label for="project-url">Project URL</label>
+                        <input type="text" name="" placeholder="www.website">
+                    </div>
+    
+                    <div class="col">
+                        <label for="target-audience">Target Audience</label>
+                        <input type="text" name="" placeholder="Your specific target audience">
+                    </div>
+    
+                    <div class="col">
+                        <label for="description">Project Desscription</label>
+                        <textarea name="description" placeholder="Describe your vision or needs" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+            </fieldset>
+
+            <p>By completing and sending the data, you agree to the privacy policy</p>
+            <div class="check-box">
+                <input type="checkbox">
+                <label for="accept">Accept</label>
+            </div>
+
+            <div>
+                <input type="submit" value="Send >">
+            </div>
+        </form>
+    </section>
 </body>
 </html>
